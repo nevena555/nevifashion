@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a web site where I create web site designs">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="design, Art, web, site">
+    <meta name="author" content="Nikolay Vasilev">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <title>nevifashion | Contact</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/css/mdb.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+
+
+    <%- include menu.ejs %>
+    <div class="container-fluid my-2">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Contact</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="card mb-5">
+            <div class="card-header NavBg">
+              <h1 class="text-white"><i class="fa fa-envelope prefix"></i> <span>Write to me:</span></h1>
+            </div>
+            <div class="card-body">
+              <form id="contact-form" name="contact-form" action="php/mail.php" method="POST">
+                <div class="md-form mb-0">
+                  <i class="fa fa-user prefix grey-text"></i>
+                  <input type="text" id="name" name="name" class="form-control">
+                  <label for="name" class="">Your name</label>
+                </div>
+                <div class="md-form mb-0">
+                  <i class="fa fa-envelope prefix grey-text"></i>
+                  <input type="text" id="email" name="email" class="form-control">
+                  <label for="email" class="">Your email</label>
+                </div>
+                <div class="md-form mb-0">
+                  <i class="fa fa-phone prefix grey-text"></i>
+                  <input type="text" id="form-phone" name="phone" class="form-control">
+                  <label for="form-phone">Your Phone</label>
+                </div>
+                <div class="md-form">
+                  <i class="fa fa-pencil-alt prefix grey-text"></i>
+                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                  <label for="message">Your message</label>
+                </div>
+                <div class="text-center">
+                  <span class="waves-input-wrapper waves-effect waves-light">
+                    <input type="submit" name="submit" value="Send" class="btn MyBtn">
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="d-flex justify-content-center">
+            <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.6049192300134!2d27.905551315008662!3d43.21777527913862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a454700065224d%3A0x4cc706a9dd7678b6!2z0YPQuy4g4oCe0J3QtdC-0YTQuNGCINCg0LjQu9GB0LrQuOKAnCAyMywgOTAwMCDQktCw0YDQvdCwINCm0LXQvdGC0YrRgCwg0JLQsNGA0L3QsA!5e0!3m2!1sbg!2sbg!4v1545134733926" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include footer.ejs %>
+
+  </body>
+</html>

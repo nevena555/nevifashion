@@ -1,0 +1,26 @@
+.NavBg {
+    background-color: #F4A4BD !important;
+}
+.MyBtn {
+    color: black !important;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #F4A4BD !important;
+}
+.MyBtn:hover{
+  color: white !important;
+  background-color: #F4A4BD !important;
+}
+.active{
+  color: #F4A4BD !important;
+}
+.HeaderBg {
+    height: 75vh;
+    background-image: url(../img/fashion.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
